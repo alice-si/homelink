@@ -20,7 +20,17 @@
 
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
-const { mnemonic, infuraProject } = require('./secrets.json');
+let mnemonic, infuraProject;
+
+try {
+  const secrets = require('./secrets.json');
+  mnemonic = secrets.mnemonic;
+  infuraProject = secrets.infuraProject;
+} catch (err) {
+  console.log('You should have secrets.json file with mnemonic key and infura'
+            + 'project id if you want to be able to deploy contracts');
+}
+
 
 module.exports = {
   /**
@@ -47,7 +57,7 @@ module.exports = {
       },
       network_id: 4,
       gas: 4700000,
-      from: '0x85A15121fd7453fc1c08d3f8E936554F0891CF31',
+      from: '0xD0e7083A32c61f28CD0d713C47A2611e1c2dadC9',
       skipDryRun: true,
     },
   },

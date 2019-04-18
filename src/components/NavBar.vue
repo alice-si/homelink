@@ -6,6 +6,7 @@
       <div class="mdl-layout__header navbarcolour">
         <div class="mdl-layout__header-row">
           <!-- Title -->
+          <!-- <span class="mdl-layout-title"><img class="logo" src="../../public/logo.svg" height="48px"/>Homelink</span> -->
           <span class="mdl-layout-title"><img class="logo" src="../../public/logo.svg" height="48px"/>Homelink</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
