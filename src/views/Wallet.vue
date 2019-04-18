@@ -2,7 +2,7 @@
   <div id="app">
     <notifications group="notifications" />
     <NavBar selected="wallet"/>
-    <div id="p3" v-if="JSON.stringify(state.history) == '{}'" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+    <!-- <div id="p3" v-if="JSON.stringify(state.history) == '{}'" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div> -->
     <Wallet v-bind:currentPeriod="currentPeriod" />
     <QuestionModalDialog />
   </div>
