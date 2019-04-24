@@ -117,7 +117,7 @@ export default {
     border-radius: 3px;
   }
 
-  .claimCellSaved {
+  .claimCellSaved,.claimCellCash {
     background: lightgreen;
     border-radius: 3px;
     /* position: absolute; */

@@ -48,6 +48,8 @@ export default {
       for (let addr in this.state.stats.tenants) {
         l.push(Object.assign(this.state.stats.tenants[addr], {id: counter++}))
       }
+      console.log("____________");
+      console.log(JSON.stringify(l[6]));
       return l
     }
   },

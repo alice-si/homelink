@@ -24,7 +24,14 @@ function listenForTenantUpdates(callback) {
   });
 
   contract.on(filterOutcomes, (tenant, period, instantCash) => {
-    console.log('outcome!');
+    // console.log(JSON.stringify(
+    //   {
+    //     type: 'outcome',
+    //     tenant,
+    //     period,
+    //     instantCash
+    //   }
+    // ));
     if (!collectedData[tenant]) collectedData[tenant] = {};
     if (!collectedData[tenant].outcomes) {
       collectedData[tenant].outcomes = [];
